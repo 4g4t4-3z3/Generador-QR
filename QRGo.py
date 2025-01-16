@@ -5,7 +5,6 @@ from tkinter import messagebox
 from tkinter import filedialog
 import qrcode
 from PIL import Image, ImageTk
-from reportlab.pdfgen import canvas
 
 def generar_qr():
     """Genera un QR con el texto proporcionado por el usuario y permite guardarlo."""
@@ -26,23 +25,12 @@ def generar_qr():
 
     save_path = filedialog.asksaveasfilename(
         defaultextension=".png",
-        filetypes=[("PNG files", "*.png"), ("PDF files", "*.pdf")],
+        filetypes=[("PNG files", "*.png")],
         title="Guardar QR como"
     )
     if save_path:
-        if save_path.endswith(".png"):
-            img.save(save_path)
-            messagebox.showinfo("Éxito", f"El QR se ha guardado como PNG en: {save_path}")
-        elif save_path.endswith(".pdf"):
-            pdf = canvas.Canvas(save_path)
-            img_path = "temp_qr.png"
-            img.save(img_path)
-            pdf.drawImage(img_path, 100, 500, 200, 200)  # Ajusta las coordenadas y tamaño del QR
-            pdf.save()
-            os.remove(img_path)
-            messagebox.showinfo("Éxito", f"El QR se ha guardado como PDF en: {save_path}")
-        else:
-            messagebox.showwarning("Formato no válido", "Selecciona un formato válido (PNG o PDF).")
+        img.save(save_path)
+        messagebox.showinfo("Éxito", f"El QR se ha guardado como PNG en: {save_path}")
     else:
         messagebox.showwarning("Cancelado", "No se guardó el QR.")
 
