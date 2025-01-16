@@ -27,7 +27,7 @@ Instalación
 
     Clona este repositorio en tu máquina local:
 
-git clone https://github.com/4g4t4-3z3/AgataQR.git
+git clone https://github.com/4g4t4-3z3/Generador-QR.git
 
 Instala las dependencias necesarias:
 
