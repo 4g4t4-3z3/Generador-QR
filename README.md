@@ -1,10 +1,10 @@
 # ShadowCrypt-Security
-ShadowCrypt-Security Generator QR
+ShadowCrypt-Security QRGo.py
 
-Generator QR es una herramienta intuitiva y fácil de usar para generar códigos QR personalizados. Este programa permite a los usuarios ingresar  mensajes que quieres que sean privados, y luego genera un código QR que puede ser escaneado para acceder a esa información de manera rápida y eficiente.
+QRGo.py es una herramienta intuitiva y fácil de usar para generar códigos QR personalizados. Este programa permite a los usuarios ingresar  mensajes que quieres que sean privados, y luego genera un código QR que puede ser escaneado para acceder a esa información de manera rápida y eficiente.
 Características
 
-    Generación de QR: Permite ingresar texto con instrucciones o mensajes que quieres que sean privados, y luego genera un código QR que almacena dicha información.
+    QRGo.py: Permite ingresar texto con instrucciones o mensajes que quieres que sean privados, y luego genera un código QR que almacena dicha información.
 
     Interfaz Gráfica Intuitiva: Con una interfaz limpia y profesional, los usuarios pueden ingresar texto fácilmente y generar los QR sin complicaciones. La ventana tiene un tamaño fijo y opciones claras para realizar cada acción.
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 Ejecuta el programa:
 
-    python GeneradorQR.py
+    python QRGo.py
 
 Contribuciones
 
