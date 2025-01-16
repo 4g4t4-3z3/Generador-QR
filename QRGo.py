@@ -98,7 +98,12 @@ menu_bar = tk.Menu(root)
 root.config(menu=menu_bar)
 menu_about = tk.Menu(menu_bar, tearoff=0)
 menu_about.add_command(label="Acerca de", command=lambda: messagebox.showinfo("Acerca de", "Este programa genera códigos QR a partir de texto."))
-menu_about.add_command(label="Info", command=lambda: messagebox.showinfo("Info", "Generador de QR"))
+menu_about.add_command(label="Info", command=lambda: messagebox.showinfo("Info", 
+    "Información: \n\n"
+    "QRGo v.1.0\n"
+    "Generador avanzado de códigos QR con opciones de personalización.\n\n"
+    "Creador: Ezequiel Tauil (ShadowCrypt-Security)\n"
+    "Más herramientas: https://github.com/EzeTauil"))
 menu_bar.add_cascade(label="Ayuda", menu=menu_about)
 
 menu_language = tk.Menu(menu_bar, tearoff=0)
